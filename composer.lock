@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "860cfbd6dc9b1675bb7aafcf9a5f4ffd",
+    "content-hash": "39195ca88938a41be69769b4acab5958",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -219,16 +219,16 @@
         },
         {
             "name": "encore/laravel-admin",
-            "version": "v1.5.9",
+            "version": "dev-admin-locale",
             "source": {
                 "type": "git",
-                "url": "https://github.com/z-song/laravel-admin.git",
-                "reference": "4fd32e48d8aeb574685a5b502816657844bb405c"
+                "url": "https://github.com/videni/laravel-admin.git",
+                "reference": "eece5c94c93965f16cbd1d32be3f8b6649195198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/z-song/laravel-admin/4fd32e48d8aeb574685a5b502816657844bb405c.zip",
-                "reference": "4fd32e48d8aeb574685a5b502816657844bb405c",
+                "url": "https://api.github.com/repos/videni/laravel-admin/zipball/eece5c94c93965f16cbd1d32be3f8b6649195198",
+                "reference": "eece5c94c93965f16cbd1d32be3f8b6649195198",
                 "shasum": ""
             },
             "require": {
@@ -267,7 +267,15 @@
                     "src/helpers.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Models\\": "tests/models",
+                    "Tests\\Controllers\\": "tests/controllers"
+                },
+                "classmap": [
+                    "tests/TestCase.php"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -285,7 +293,10 @@
                 "grid",
                 "laravel"
             ],
-            "time": "2018-01-23T05:40:02+00:00"
+            "support": {
+                "source": "https://github.com/videni/laravel-admin/tree/admin-locale"
+            },
+            "time": "2018-02-07T08:12:53+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -4078,7 +4089,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "encore/laravel-admin": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
