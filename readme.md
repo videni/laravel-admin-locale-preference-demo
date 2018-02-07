@@ -1,13 +1,18 @@
 #  安装
 
-1. create database named laravel-admin
+1. install depedencies
+```
+    composer install -vvv --profile --prefer-dist
+```
+2. create database named `laravel_admin`
 
-2. generate database struture
+3. generate database struture
+```
     ./artisan admin:install
+```
+4. run `./artisan serve`
 
-3. run `./artisan serve`
-
-4. Open `http://127.0.0.1:8000/admin/` in browser,use username admin and password admin to login.
+5. Open `http://127.0.0.1:8000/admin/` in browser,use username `admin` and password `admin` to login.
 
 # 如何切换语言
 
