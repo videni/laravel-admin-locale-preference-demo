@@ -14,6 +14,8 @@
 
 5. Open `http://127.0.0.1:8000/admin/` in browser,use username `admin` and password `admin` to login.
 
+PS: You can also access the tempary online demo [here](http://demo.videni.cn:81/admin) , account is same as above.
+
 # 如何切换语言
 
 1. go to `http://127.0.0.1:8000/admin/auth/setting`
